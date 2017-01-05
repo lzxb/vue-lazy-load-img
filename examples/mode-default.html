@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>默认模式，不对图片进行剪切</title>
+    <link rel="stylesheet" href="./style/common.css">
+</head>
+
+<body>
+    <div id="app">
+        <vue-lazy-load-img 
+            mode="default"
+            :time="300"
+            :complete="true"
+            :position="{ top: 0, right: 0, bottom: 0, left: 0 }"
+            @before="before" 
+            @success="success" 
+            @error="error">
+            <ul>
+                <li v-for="num in 21">
+                    <img :src="'./images/default.png'" :data-src="'./images/' + num + '.jpg'" alt="">
+                </li>
+            </ul>
+        </vue-lazy-load-img>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="../node_modules/lazy-load-img/dist/lazy-load-img.js"></script>
+    <script src="../dist/vue-lazy-load-img.js"></script>
+    <script>
+        ; (function () {
+            new Vue({
+                el: '#app',
+                methods: {
+                    before: function () { // 图片加载之前执行方法
+
+                    },
+                    success: function (el) { // 图片加载成功执行方法
+                        el.classList.add('success')
+                    },
+                    error: function (el) { // 图片加载失败执行方法
+                        el.src = './images/error.png'
+                    }
+                }
+            })
+
+        })()
+    </script>
+</body>
+
+</html>
