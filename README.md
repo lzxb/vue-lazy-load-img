@@ -8,10 +8,9 @@ npm run dev
 ```
 
 ## 使用
-* 支持AMD、CMD、和页面直接引入使用，下面只列出CMD的使用教程
+* 支持模块化加载和浏览器中直接引入使用
+* npm install --save-dev lazy-load-img vue-lazy-load-img
 ```javascript
-// npm install --save-dev lazy-load-img 
-// npm install --save-dev vue-lazy-load-img
 
 import Vue from 'vue'
 import VueLazyLoadImg from 'vue-lazy-load-img'
