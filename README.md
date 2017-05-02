@@ -15,7 +15,7 @@ npm run dev
 import Vue from 'vue'
 import VueLazyLoadImg from 'vue-lazy-load-img'
 
-Vue.use(vue-lazy-load-img)
+Vue.use(VueLazyLoadImg)
 
 ```
 ```vue
