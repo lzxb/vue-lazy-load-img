@@ -16,7 +16,7 @@ export default {
       type: Number,
       default: 300
     },
-    complete: { // 页面内所有数据图片加载完成后，是否自己销毁程序，true默认销毁，false不销毁
+    done: { // 页面内所有数据图片加载完成后，是否自己销毁程序，true默认销毁，false不销毁
       type: Boolean,
       default: true
     },

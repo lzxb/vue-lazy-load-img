@@ -22,7 +22,7 @@ Vue.use(VueLazyLoadImg)
 <vue-lazy-load-img 
     mode="diy"
     :time="300"
-    :complete="true"
+    :done="true"
     :position="{ top: 0, right: 0, bottom: 0, left: 0 }"
     :diy="{ backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }"
     @before="before" 
