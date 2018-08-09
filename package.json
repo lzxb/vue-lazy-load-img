@@ -1,7 +1,7 @@
 {
   "name": "vue-lazy-load-img",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "vue 图片懒加载插件",
   "main": "dist/vue-lazy-load-img.js",
   "keywords": [
     "lazy load img",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/lzxb/vue-lazy-load-img.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lzxb/vue-lazy-load-img/issues"
   },

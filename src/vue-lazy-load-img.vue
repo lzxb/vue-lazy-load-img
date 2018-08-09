@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted () {
-    var options = Object.assign(this.$options.propsData, {
+    var options = Object.assign({}, this.$options.propsData, {
       el: this.$el,
       before: (...arg) => { // 图片加载之前执行方法
         this.$emit('before', ...arg)
@@ -48,7 +48,7 @@ export default {
     this.lazyLoadImg = new LazyLoadImg(options)
   },
   beforeDestroy () {
-    this.lazyLoadImg.destroy()
+    this.lazyLoadImg && this.lazyLoadImg.destroy()
   }
 }
 </script>

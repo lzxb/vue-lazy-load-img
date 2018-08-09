@@ -53,7 +53,7 @@ var VueLazyLoadImg = {
   mounted: function mounted() {
     var _this = this;
 
-    var options = _extends(this.$options.propsData, {
+    var options = _extends({}, this.$options.propsData, {
       el: this.$el,
       before: function before() {
         for (var _len = arguments.length, arg = Array(_len), _key = 0; _key < _len; _key++) {
@@ -83,7 +83,7 @@ var VueLazyLoadImg = {
     this.lazyLoadImg = new LazyLoadImg(options);
   },
   beforeDestroy: function beforeDestroy() {
-    this.lazyLoadImg.destroy();
+    this.lazyLoadImg && this.lazyLoadImg.destroy();
   }
 };
 
