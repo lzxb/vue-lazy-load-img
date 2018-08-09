@@ -1,6 +1,6 @@
 {
   "name": "vue-lazy-load-img",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "vue 图片懒加载插件",
   "main": "dist/vue-lazy-load-img.js",
   "keywords": [

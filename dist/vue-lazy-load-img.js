@@ -20,7 +20,7 @@ var _extends = Object.assign || function (target) {
   return target;
 };
 
-var VueLazyLoadImg = {
+var VueLazyLoadImg$1 = {
   render: function render() {
     var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_vm._t("default")], 2);
   },
@@ -89,17 +89,19 @@ var VueLazyLoadImg = {
 
 var state = false;
 
-var install$1 = function (Vue) {
+var install = function (Vue) {
   if (state) return;
   state = true;
-  Vue.component('vue-lazy-load-img', VueLazyLoadImg);
+  Vue.component('vue-lazy-load-img', VueLazyLoadImg$1);
 };
 
+VueLazyLoadImg$1.install = install;
+
 if (typeof window !== 'undefined' && window.Vue) {
-  install$1(window.Vue);
+  install(window.Vue);
 }
 
-return install$1;
+return VueLazyLoadImg$1;
 
 })));
 //# sourceMappingURL=vue-lazy-load-img.js.map
